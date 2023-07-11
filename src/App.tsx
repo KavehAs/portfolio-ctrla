@@ -1,10 +1,25 @@
-import { Sugar } from 'react-preloaders';
+// import { Sugar } from 'react-preloaders';
+
+import { Routes, Route } from "react-router-dom"
+import Layout from "./layout/Layout"
+import Home from "./Pages/Home"
+import Portfolio from "./Pages/Portfolio"
+import ContactUs from "./Pages/ContactUs"
+import AboutUs from "./Pages/AboutUs"
+import { Container } from "@mui/material"
 
 function App() {
   return (
-    <div>
-      {/* <Sugar background="#212121" color="#BDBDBD"/> */}
-    </div>
+    <Container maxWidth={"lg"} className="px-10">
+      <Layout>
+        <Routes>
+          <Route path="/" Component={() => <Home />} />
+          <Route path="/portfolio" Component={() => <Portfolio />} />
+          <Route path="/contact" Component={() => <ContactUs />} />
+          <Route path="/about" Component={() => <AboutUs />} />
+        </Routes>
+      </Layout>
+    </Container>
   )
 }
 
