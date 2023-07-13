@@ -1,11 +1,11 @@
 // import { Sugar } from 'react-preloaders';
 
 import { Routes, Route } from "react-router-dom"
-import Layout from "./layout/Layout"
-import Home from "./Pages/Home"
-import Portfolio from "./Pages/Portfolio"
-import ContactUs from "./Pages/ContactUs"
-import AboutUs from "./Pages/AboutUs"
+import Layout from "./Components/layout/Layout"
+import Home from "./Components/Pages/Home"
+import Portfolio from "./Components/Pages/Portfolio"
+import ContactUs from "./Components/Pages/ContactUs"
+import AboutUs from "./Components/Pages/AboutUs"
 import { Container } from "@mui/material"
 
 function App() {
