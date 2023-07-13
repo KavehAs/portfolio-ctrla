@@ -6,8 +6,8 @@ body{
     @apply p-0 bg-darkBlack;
 }
 
-@layer base{
-    a {
-        @apply no-underline text-greyText hover:text-lightText transition-all;
+@layer utilities{
+    .no-style{
+        all: unset !important;
     }
 }

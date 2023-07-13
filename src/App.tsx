@@ -13,10 +13,10 @@ function App() {
     <Container maxWidth={"lg"} className="px-10">
       <Layout>
         <Routes>
-          <Route path="/" Component={() => <Home />} />
-          <Route path="/portfolio" Component={() => <Portfolio />} />
-          <Route path="/contact" Component={() => <ContactUs />} />
-          <Route path="/about" Component={() => <AboutUs />} />
+          <Route path="/" element={ <Home />} />
+          <Route path="/portfolio" element={ <Portfolio />} />
+          <Route path="/contact" element={ <ContactUs />} />
+          <Route path="/about" element={ <AboutUs />} />
         </Routes>
       </Layout>
     </Container>
