@@ -10,7 +10,7 @@ import { Container } from "@mui/material"
 
 function App() {
   return (
-    <Container maxWidth={"lg"} className="px-10">
+    <Container maxWidth={"lg"} className="px-0 sm:px-10">
       <Layout>
         <Routes>
           <Route path="/" element={ <Home />} />

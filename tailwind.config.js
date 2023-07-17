@@ -7,6 +7,7 @@ export default {
       colors: {
         'darkBlack': '#212121',
         'lightBlack': '#424242',
+        'backDark': '#424242' ,
         'lightText': '#EEEEEE',
         'greyText': '#BDBDBD',
         'pureWhite': '#FAFAFA'
