@@ -18,7 +18,7 @@ export default function MobileMenu() {
     const navigate = useNavigate();
 
     return (
-        <AppBar className='fixed top-auto bottom-0 block sm:hidden'>
+        <AppBar className='fixed top-auto bottom-0 block bg-lightBlack sm:hidden h-[9vh]'>
             <Toolbar className='p-0 '>
                 <Box sx={{ width: 600 }} component={'div'}>
                     <BottomNavigation

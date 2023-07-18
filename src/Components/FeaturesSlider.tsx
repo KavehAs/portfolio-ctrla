@@ -57,7 +57,7 @@ export default function Slider() {
   ])
 
   return (
-    <div className='h-auto  mt-11 mb-20'>
+    <div className='h-auto mb-20'>
       <Swiper
         slidesPerView={2}
         breakpoints={{
@@ -76,7 +76,7 @@ export default function Slider() {
       >
 
         {features.map((feature, index) => <SwiperSlide key={index}
-          className='mt-12 bg-backDark pt-3 rounded-lg h-40 flex flex-col justify-center items-center text-greyText
+          className=' bg-backDark text-center pt-3 rounded-lg h-40 flex flex-col justify-center items-center text-greyText
           text-xl sm:text-2xl '>
           <feature.logo fontSize='large'/>
           <h4>{feature.content}</h4>

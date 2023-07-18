@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.svg'
 
 export default function Header() {
     return (
@@ -31,10 +30,6 @@ export default function Header() {
                 </li>
             </ul>
 
-            <Link className='no-underline' to={'/'}>
-            {/* <h1 className='text-greyText text-3xl sm:text-4xl md:text-5xl'>Ctrl A</h1> */}
-            <img src={logo} alt="logo" className='w-24 md:w-28 p-2 mt-5 md:mt-10 ' />
-            </Link>
         </div>
     )
 }
