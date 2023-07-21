@@ -1,8 +1,8 @@
 // import { Sugar } from 'react-preloaders';
 
 import { Routes, Route } from "react-router-dom"
-import Layout from "./Components/layout/Layout"
-import Home from "./Components/Pages/Home"
+import Layout from "./Components/Layout/Layout"
+import Home from "./Components/Home/Home"
 import Portfolio from "./Components/Pages/Portfolio"
 import ContactUs from "./Components/Pages/ContactUs"
 import AboutUs from "./Components/Pages/AboutUs"

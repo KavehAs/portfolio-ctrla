@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button'
-import logo from '../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 
 export default function Introduction() {

@@ -1,6 +1,5 @@
-import MobileMenu from './MobileMenu';
-import Footer from './Footer';
-import Header from './Header';
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Layout({children} : {children : JSX.Element[] | JSX.Element}) {
     return (
@@ -8,7 +7,6 @@ function Layout({children} : {children : JSX.Element[] | JSX.Element}) {
             <Header/>
             {children}
             {/* <Footer /> */}
-            <MobileMenu />
         </div>
     );
 }

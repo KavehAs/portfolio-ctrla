@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -22,39 +20,39 @@ interface featuresType {
   content: String,
   logo: OverridableComponent<SvgIconTypeMap<{}, "svg">> & {
     muiName: string;
-},
+  },
 }
 
 
 export default function Slider() {
 
-  const [features, setFeatures] = React.useState<featuresType[]>([
+  const features: featuresType[] = [
     {
       content: "بهینه سازی سایت",
-      logo: BeenhereOutlinedIcon ,
+      logo: BeenhereOutlinedIcon,
     },
     {
       content: "سئو اولیه سایت",
-      logo: SpeedIcon ,
+      logo: SpeedIcon,
     },
     {
       content: "آموزش تولید محتوا",
-      logo: LightbulbOutlinedIcon ,
+      logo: LightbulbOutlinedIcon,
     },
     {
       content: "آموزش مدیریت سایت",
-      logo: ManageAccountsOutlinedIcon ,
+      logo: ManageAccountsOutlinedIcon,
     },
     {
       content: "پشتیبانی",
-      logo: SupportAgentOutlinedIcon ,
+      logo: SupportAgentOutlinedIcon,
     },
     {
       content: "مشاوره رایگان",
-      logo: ForumOutlinedIcon ,
+      logo: ForumOutlinedIcon,
     },
 
-  ])
+  ];
 
   return (
     <div className='h-auto mb-20'>
@@ -78,7 +76,7 @@ export default function Slider() {
         {features.map((feature, index) => <SwiperSlide key={index}
           className=' bg-backDark text-center pt-3 rounded-lg h-40 flex flex-col justify-center items-center text-greyText
           text-xl sm:text-2xl '>
-          <feature.logo fontSize='large'/>
+          <feature.logo fontSize='large' />
           <h4>{feature.content}</h4>
         </SwiperSlide>)}
       </Swiper>
