@@ -18,6 +18,7 @@ import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
 
 
 interface cardPropsType {
@@ -52,10 +53,15 @@ export default function SampleCards({ title, assets, link, category, content }: 
             </Swiper>
 
             <CardContent>
-                <Typography className='text-lightText text-3xl md:text-4xl' gutterBottom variant="h4" component="div">
-                    {title}
-                </Typography>
-                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify' variant="body2" color="text.secondary">
+                <Box component={"div"} className='flex justify-between items-center gap-8'>
+                    <Typography className='text-lightText text-3xl md:text-4xl' gutterBottom variant="h4" component="div">
+                        {title}
+                    </Typography>
+                    <Typography variant='h6' component={'div'} className='text-base md:text-lg xl:text-xl py-2 px-4 bg-backDark rounded-full text-lightText'>
+                        {category}
+                    </Typography>
+                </Box>
+                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify mt-3' variant="body2" color="text.secondary">
                     {content}
                 </Typography>
             </CardContent>
