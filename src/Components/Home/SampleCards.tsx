@@ -30,33 +30,38 @@ interface cardPropsType {
 
 export default function SampleCards({ title, assets, link, category, content }: cardPropsType) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card className='w-full xs:max-w-[650px] lg:max-w-[870px] xl:max-w-[1000px] bg-lightBlack rounded-lg'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
                     delay: 3500,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 }}
                 pagination={{
                     clickable: true,
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper w-full"
             >
-                {assets.map((asset) => <SwiperSlide key={asset.id}><img src={asset.url} alt="assets" /></SwiperSlide>)}
+                {assets.map((asset) =>
+                    <SwiperSlide key={asset.id} className='w-full'>
+                        <img src={asset.url} alt="assets" className='w-full' />
+                    </SwiperSlide>)}
             </Swiper>
+
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography className='text-lightText text-3xl md:text-4xl' gutterBottom variant="h4" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify' variant="body2" color="text.secondary">
                     {content}
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small" href={link} target="_blank">Share</Button>
+
+            <CardActions className='pb-3'>
+                <Button className='text-lg md:text-xl xl:text-2xl text-pureWhite bg-backDark hover:bg-darkBlack ' size="large" href={link} target="_blank">مشاهده سایت</Button>
             </CardActions>
         </Card>)
 }

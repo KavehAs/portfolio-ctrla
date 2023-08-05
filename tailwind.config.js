@@ -7,12 +7,13 @@ export default {
       colors: {
         'darkBlack': '#212121',
         'lightBlack': '#424242',
-        'backDark': '#424242' ,
+        'backDark': '#616161' ,
         'lightText': '#EEEEEE',
         'greyText': '#BDBDBD',
         'pureWhite': '#FAFAFA'
       } ,
       screens: {
+        'xs': '360px',
         'sm': '600px',  
         'md': '768px',  
         'lg': '1024px',  
