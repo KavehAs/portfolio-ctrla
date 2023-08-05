@@ -6,7 +6,7 @@ function Layout({children} : {children : JSX.Element[] | JSX.Element}) {
         <div>
             <Header/>
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }

@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <div className='absolute bottom-0'>Footer</div>
+    <Link to={"/"} className='h-9 mt-16 text-greyText text-sm flex justify-center items-center'>
+      Ctrl A
+    </Link>
   )
 }
