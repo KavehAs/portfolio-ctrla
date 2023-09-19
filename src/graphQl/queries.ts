@@ -14,8 +14,9 @@ export const GET_WEBSITES_INFO = gql`
                 id
             }
             content {
-                text
+                html
             }
+            link
         }
 }
 `;

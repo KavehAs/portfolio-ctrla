@@ -61,8 +61,7 @@ export default function SampleCards({ title, assets, link, category, content }: 
                         {category}
                     </Typography>
                 </Box>
-                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify mt-3' variant="body2" color="text.secondary">
-                    {content}
+                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify mt-3' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: content }}>
                 </Typography>
             </CardContent>
 
