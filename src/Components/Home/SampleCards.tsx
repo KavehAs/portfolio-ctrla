@@ -54,14 +54,14 @@ export default function SampleCards({ title, assets, link, category, content }: 
 
             <CardContent>
                 <Box component={"div"} className='flex justify-between items-center gap-8'>
-                    <Typography className='text-lightText text-3xl md:text-4xl' gutterBottom variant="h4" component="div">
+                    <Typography className='text-lightText text-2xl md:text-4xl' gutterBottom variant="h4" component="div">
                         {title}
                     </Typography>
                     <Typography variant='h6' component={'div'} className='text-base md:text-lg xl:text-xl py-2 px-4 bg-backDark rounded-full text-lightText'>
                         {category}
                     </Typography>
                 </Box>
-                <Typography className='text-greyText text-lg md:text-xl xl:text-2xl text-justify mt-3' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: content }}>
+                <Typography className='text-greyText text-xl md:text-2xl xl:text-2xl leading-7 mt-3' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: content }}>
                 </Typography>
             </CardContent>
 

@@ -5,7 +5,7 @@ import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 
 export default function Introduction() {
   return (
-    <div className='mt-6 flex-col items-center flex justify-around h-[90svh] sm:h-[85svh]'>
+    <div className='flex-col items-center flex justify-around h-[90svh]  mt-8 xs:mt-0'>
       <Link className='no-underline' to={'/'}>
         <img src={logo} alt="logo" className='w-24 md:w-28 p-2' />
       </Link>

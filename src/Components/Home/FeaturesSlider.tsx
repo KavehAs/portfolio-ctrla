@@ -55,7 +55,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className='h-auto my-20'>
+    <div className='h-auto my-24 '>
       <Swiper
         slidesPerView={2}
         breakpoints={{
