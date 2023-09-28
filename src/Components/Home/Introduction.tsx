@@ -16,7 +16,7 @@ export default function Introduction() {
         طراحی و توسعه تخصصی وبسایت های کاربردی , قدمی رو به جلو در بازاریابی کسب و کار شما
       </h1>
 
-      <Link to={"/about"}>
+      <Link to={"/contact"}>
         <Button variant="contained" size='large' startIcon={<OpenInNewRoundedIcon className='ml-3' />} className='bg-lightBlack text-greyText border-greyText hover:border-lightText text-lg md:text-xl '>اطلاعات بیشتر</Button>
       </Link>
     </div>

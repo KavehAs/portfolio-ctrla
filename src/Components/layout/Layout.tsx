@@ -1,10 +1,10 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({children , ref} : {children : JSX.Element[] | JSX.Element , ref : any }) {
+function Layout({children } : {children : JSX.Element[] | JSX.Element }) {
     return (
         <div>
-            <Header ref={ref}/>
+            <Header/>
             {children}
             <Footer />
         </div>

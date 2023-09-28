@@ -1,23 +1,21 @@
-// import { Sugar } from 'react-preloaders';
+import { Sugar } from 'react-preloaders';
 
 import { Routes, Route } from "react-router-dom"
 import Layout from "./Components/Layout/Layout"
 import Home from "./Components/Home/Home"
-import AboutUs from "./Components/AboutUs/AboutUs"
+import AboutUs from "./Components/ContactUs/ContactUs"
 import { Container } from "@mui/material"
-import {useRef} from 'react';
 
 function App() {
-  const sampleRef = useRef(null);
-
   return (
     <Container maxWidth={"xl"} className="px-4 sm:px-10">
-      <Layout ref>
+      <Layout>
         <Routes>
           <Route path="/" element={ <Home />} />
-          <Route path="/about" element={ <AboutUs />} />
+          <Route path="/contact" element={ <AboutUs />} />
         </Routes>
       </Layout>
+      <Sugar time={2000} background="#424242" color="#BDBDBD"/>
     </Container>
   )
 }
