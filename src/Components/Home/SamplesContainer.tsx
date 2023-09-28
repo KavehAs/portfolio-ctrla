@@ -2,7 +2,6 @@ import { useQuery } from "@apollo/client"
 import { GET_WEBSITES_INFO } from "../../graphQl/queries"
 import SampleCards from "./SampleCards";
 import { Grid } from "@mui/material";
-import { useEffect } from "react";
 import Loading from "../Loading";
 import SentimentDissatisfiedOutlinedIcon from '@mui/icons-material/SentimentDissatisfiedOutlined';
 
