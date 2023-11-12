@@ -42,12 +42,13 @@ export default function SamplesContainer() {
             </div>
         )
     }
+    
     else if (!loading) {
         return (
             <div className="text-greyText">
                 <Grid container>
                     {data && data.websites.map((website: websiteDataType) =>
-                        <Grid item xs={12} key={website.id} className="flex justify-center my-10">
+                        <Grid item xs={12} key={website.id} className="flex justify-center items-center my-10">
                             <SampleCards
                                 title={website.title}
                                 category={website.category.categoryTitle}
